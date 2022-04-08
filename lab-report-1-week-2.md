@@ -1,12 +1,52 @@
-**Lab Report 1 Week 2**. 
+**Lab Report 1 Week 2**
 
-# What I learned this week  
-1. Using GitHub Pages
-2. Using GitHub Desktop App
-3. Relearning Markdown
+# Tutorial to log onto ieng6 account
+1. Install VSCode via this [link](https://code.visualstudio.com/)!
+![VS Code](/Images/ss_VSCode.png)  
+- Click the link and install
 
-Here is a screenshot of what I was able to do!
+2. Remotely Connecting
+![Remote Connection](/Images/ss_RemoteConnection.png)
+- Open Terminal
+- Type "ssh cs15lsp22avw@ieng6.ucsd.edu"
+- Use your own account! (different letters)
 
-![Lab Report 1](ss.png)  
+3. Trying Some Commands
+![Trying Commands](/Images/ss_Commands.png)
+- Try some commands like cp
+- In this case, it fails since the file couldn't be copied
+- These commands could be fun to play with:
+    - cd ~
+    - cd
+    - ls -lat
+    - cat /home/linux/ieng6/cs15lsp22/public/hello.txt
 
-Have a _nice_ weekend!  
+4. Moving Files with scp
+![Using scp](/Images/ss_scp.png)
+![Moving files](/Images/SS_moveFiles.png)
+- Create WhereAmI.java file
+- Add a few print statements to the file
+- Run "scp WhereAmI.java cs15lsp22svw@ieng6.ucsd.edu:~/"
+- You should be asked for a password
+- Now log into ieng6, you should be able to see the file
+- Now run javac and and java remotely
+
+5. Setting an SSH Key
+![Generating SSH Key](/Images/ss_sshKey.png)
+- To avoid having to enter your password everytime you ssh to ieng6, we can generate a ssh key to bypass the password prompt
+- Steps
+    - ssh-keygen
+    - /Users/\<user-name\>/.ssh/id_rsa
+    - DON'T ADD PASSPHRASE TWICE (just press enter when asked what you want your password to be)
+- How copy the _public_ key to the .ssh directory of your user account on the server
+    - ssh cs15lsp22avw@ieng6.ucsd.edu
+    - mkdir .ssh
+    - scp /Users/<user-name>/.ssh/id_rsa.pub 
+    - ~/.ssh/authorized_keys
+6. Optimize Remote Running
+
+- Using tab a lot to autocomplete as well as copy and pasting cs15lsp22zzz@ieng6.ucsd.edu:~/ will result significantly faster setupt times
+- Took roughly 18 keystrokes/mouse clicks to scp files
+
+![Happy Face](/Images/happyface.png)
+That's it! Have a _nice_ day!  
