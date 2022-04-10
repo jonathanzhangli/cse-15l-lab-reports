@@ -2,17 +2,17 @@
 
 # Tutorial to log onto ieng6 account
 1. Install VSCode via this [link](https://code.visualstudio.com/)!
-![VS Code](/Images/ss_VSCode.png)  
+![VS Code](/Images/SS_VSCode.png)  
 - Click the link and install
 
 2. Remotely Connecting
-![Remote Connection](/Images/ss_RemoteConnection.png)
+![Remote Connection](/Images/SS_RemoteConnection.png)
 - Open Terminal
 - Type "ssh cs15lsp22avw@ieng6.ucsd.edu"
 - Use your own account! (different letters)
 
 3. Trying Some Commands
-![Trying Commands](/Images/ss_Commands.png)
+![Trying Commands](/Images/SS_Commands.png)
 - Try some commands like cp
 - In this case, it fails since the file couldn't be copied
 - These commands could be fun to play with:
@@ -22,7 +22,7 @@
     - cat /home/linux/ieng6/cs15lsp22/public/hello.txt
 
 4. Moving Files with scp
-![Using scp](/Images/ss_scp.png)
+![Using scp](/Images/SS_scp.png)
 ![Moving files](/Images/SS_moveFiles.png)
 - Create WhereAmI.java file
 - Add a few print statements to the file
@@ -32,7 +32,7 @@
 - Now run javac and and java remotely
 
 5. Setting an SSH Key
-![Generating SSH Key](/Images/ss_sshKey.png)
+![Generating SSH Key](/Images/SS_sshKey.png)
 - To avoid having to enter your password everytime you ssh to ieng6, we can generate a ssh key to bypass the password prompt
 - Steps
     - ssh-keygen
