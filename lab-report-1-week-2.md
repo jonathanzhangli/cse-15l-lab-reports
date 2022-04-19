@@ -16,10 +16,10 @@
 - Try some commands like cp
 - In this case, it fails since the file couldn't be copied
 - These commands could be fun to play with:
-    - cd ~
-    - cd
-    - ls -lat
-    - cat /home/linux/ieng6/cs15lsp22/public/hello.txt
+    - `cd ~`
+    - `cd`
+    - `ls -lat`
+    - `cat /home/linux/ieng6/cs15lsp22/public/hello.txt`
 
 4. Moving Files with scp
 ![Using scp](/Images/SS_scp.png)
@@ -35,18 +35,19 @@
 ![Generating SSH Key](/Images/SS_sshKey.png)
 - To avoid having to enter your password everytime you ssh to ieng6, we can generate a ssh key to bypass the password prompt
 - Steps
-    - ssh-keygen
-    - /Users/\<user-name\>/.ssh/id_rsa
+    - `ssh-keygen`
+    - `/Users/\<user-name\>/.ssh/id_rsa`
     - DON'T ADD PASSPHRASE TWICE (just press enter when asked what you want your password to be)
 - How copy the _public_ key to the .ssh directory of your user account on the server
-    - ssh cs15lsp22avw@ieng6.ucsd.edu
-    - mkdir .ssh
-    - scp /Users/<user-name>/.ssh/id_rsa.pub 
-    - ~/.ssh/authorized_keys
+    - `ssh cs15lsp22avw@ieng6.ucsd.edu`
+    - `mkdir .ssh`
+    - `scp /Users/<user-name>/.ssh/id_rsa.pub `
+    - `~/.ssh/authorized_keys`
 6. Optimize Remote Running
-
-- Using tab a lot to autocomplete as well as copy and pasting cs15lsp22zzz@ieng6.ucsd.edu:~/ will result significantly faster setupt times
-- Took roughly 18 keystrokes/mouse clicks to scp files
+![Optimize](/Images/SS_Optimize.png)
+- Here are some tips to optimize:
+    - Write a command in quotes after an ssh command to run it on the remote server
+    - Semicolons run multiple commands on the same line
 
 ![Happy Face](/Images/happyface.png)
 That's it! Have a _nice_ day!  
