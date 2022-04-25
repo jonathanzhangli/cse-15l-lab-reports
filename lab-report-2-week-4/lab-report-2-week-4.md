@@ -29,5 +29,5 @@ Error Output: ![CodeChange3](Images/TestFile3.png)
 
 Bug relationship: The initial code had a bug, where it would interpret images as links and print out the image file name as a link in the output. The test file’s first “link” is actually an image, which was still printed normally as a link. To fix this bug, we changed the code to detect if the link is an image by checking for “!”, and if so then it does not return it.
 
-![Happy Face](/Images/happyface.png)
+![Happy Face](Images/happyface.png)
 That's it! Have a _nice_ day!  
