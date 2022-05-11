@@ -20,16 +20,13 @@
 - Running Git commands
 ![commit](Images/commit.png)
 
-
-
-## **Code Change #3**
-![CodeChange2](Images/CodeChange3.png)
-
-Associated [Test File 3](https://github.com/jonathanzhangli/markdown-parser-cse-15l/blob/main/test-file-3.md?plain=1) that causes the bug
-
-Error Output: ![CodeChange3](Images/TestFile3.png)
-
-Bug relationship: The initial code had a bug, where it would interpret images as links and print out the image file name as a link in the output. The test file’s first “link” is actually an image, which was still printed normally as a link. To fix this bug, we changed the code to detect if the link is an image by checking for “!”, and if so then it does not return it.
+## **Copy whole directories with scp -r**
+- Copying your whole markdown-parse directory to your ieng6 account
+![scp markdown parser](Images/scp_markdown_parser.png)
+- Running tests remotely
+![running tests remotely](Images/running_tests_remotely.png)
+- Running multiple commands in one line
+![running tests remotely](Images/running_multiple_commands.png)
 
 ![Happy Face](Images/happyface.png)
-That's it! Have a _nice_ day!  
+That's it! Have a _nice_ day! 
